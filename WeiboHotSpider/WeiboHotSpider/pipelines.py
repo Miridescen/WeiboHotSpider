@@ -29,14 +29,12 @@ class WeibohotspiderPipeline(object):
 
     def process_item(self, item, spider):
 
-        print(item)
+        # print(item)
         os.chdir(self.csvFilePath)
         with open(self.csvFileName, "a+") as f:
             csv_write = csv.writer(f)
             data_row = [item["NO"], item["keyword"], item["state"], item["hot"], item["href"]]
             csv_write.writerow(data_row)
-
-
 
         return item
 
