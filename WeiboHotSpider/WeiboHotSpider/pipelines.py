@@ -11,7 +11,7 @@ import csv
 
 class WeibohotspiderPipeline(object):
 
-    timeStr = datetime.datetime.now().strftime('%Y-%m-%d-%H-%m-%S')
+    timeStr = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
     csvFilePath = os.getcwd() + "/data"
     csvFileName = timeStr + ".csv"
     def open_spider(self, spider):
