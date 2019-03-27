@@ -1,0 +1,1905 @@
+2019-03-27 11:22:14 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: WeiboHotSpider)
+2019-03-27 11:22:14 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.2 (default, Feb 13 2019, 10:07:58) - [Clang 10.0.0 (clang-1000.11.45.5)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.2.0-x86_64-i386-64bit
+2019-03-27 11:22:14 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'WeiboHotSpider', 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'WeiboHotSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['WeiboHotSpider.spiders']}
+2019-03-27 11:22:14 [scrapy.extensions.telnet] INFO: Telnet Password: 46b53412c9023061
+2019-03-27 11:22:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-27 11:22:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-27 11:22:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-27 11:22:14 [scrapy.middleware] INFO: Enabled item pipelines:
+['WeiboHotSpider.pipelines.WeibohotspiderPipeline']
+2019-03-27 11:22:14 [scrapy.core.engine] INFO: Spider opened
+2019-03-27 11:22:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-27 11:22:14 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-03-27 11:22:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://weibo.com/sorry?pagenotfound&> from <GET https://s.weibo.com/robots.txt>
+2019-03-27 11:22:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fsorry%3Fpagenotfound%26&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1553656934.3565> from <GET https://weibo.com/sorry?pagenotfound&>
+2019-03-27 11:22:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fsorry%3Fpagenotfound%26&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1553656934.3565> (referer: None)
+2019-03-27 11:22:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://s.weibo.com/top/summary?cate=realtimehot> (referer: None)
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'href': 'https://s.weibo.com/weibo?q=%E7%94%9F%E8%82%B2%E4%BF%9D%E9%99%A9%E5%92%8C%E5%8C%BB%E4%BF%9D%E5%90%88%E5%B9%B6&Refer=new_time',
+ 'keyword': '生育保险和医保合并',
+ 'state': '热'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '1',
+ 'hot': '1873206',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%BC%A0%E6%82%AC%E6%80%80%E5%AD%95%23&Refer=top',
+ 'keyword': '张悬怀孕',
+ 'state': '沸'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '2',
+ 'hot': '1761169',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%90%91%E4%BD%90%E6%B1%82%E5%A9%9A%E9%83%AD%E7%A2%A7%E5%A9%B7&Refer=top',
+ 'keyword': '向佐求婚郭碧婷',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '3',
+ 'hot': '1741268',
+ 'href': 'https://s.weibo.comjavascript:void(0);',
+ 'keyword': '颜值控看过来',
+ 'state': '荐'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '4',
+ 'hot': '1739057',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%80%E6%9E%B6%E6%B3%A2%E9%9F%B3737max%E7%B4%A7%E6%80%A5%E8%BF%AB%E9%99%8D%23&Refer=top',
+ 'keyword': '一架波音737max紧急迫降',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '5',
+ 'hot': '1717081',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E9%83%AD%E7%A2%A7%E5%A9%B7%E9%92%BB%E6%88%92%23&Refer=top',
+ 'keyword': '郭碧婷钻戒',
+ 'state': '热'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '6',
+ 'hot': '854576',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AB%82%E5%AD%90101%23&Refer=top',
+ 'keyword': '嫂子101',
+ 'state': '热'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '7',
+ 'hot': '713579',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%8E%8B%E5%BF%83%E5%87%8C%20%E8%84%B8%23&Refer=top',
+ 'keyword': '王心凌 脸',
+ 'state': '沸'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '8',
+ 'hot': '624420',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%A4%A7%E5%A6%88%E5%B8%A6%E8%80%B3%E6%9C%BA%E8%B7%B3%E5%B9%BF%E5%9C%BA%E8%88%9E%23&Refer=top',
+ 'keyword': '大妈带耳机跳广场舞',
+ 'state': '沸'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '9',
+ 'hot': '579916',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%82%85%E5%9B%AD%E6%85%A7100%E7%B1%B3%E4%BB%B0%E6%B3%B3%E5%86%A0%E5%86%9B%23&Refer=top',
+ 'keyword': '傅园慧100米仰泳冠军',
+ 'state': '沸'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '10',
+ 'hot': '569478',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%9B%B9%E5%9B%AD%E5%8D%B3%E6%97%A5%E8%B5%B7%E8%87%AA%E8%A1%8C%E6%8B%86%E9%99%A4%23&Refer=top',
+ 'keyword': '曹园即日起自行拆除',
+ 'state': '沸'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '11',
+ 'hot': '564200',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%B5%AA%E6%BC%AB%E5%88%B0%E9%AA%A8%E5%AD%90%E9%87%8C%E7%9A%84%E5%8F%A5%E5%AD%90%23&Refer=top',
+ 'keyword': '浪漫到骨子里的句子',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '12',
+ 'hot': '556315',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%A5%BD%E7%9C%8B%E7%9A%84%E5%8D%A7%E8%9A%95%E5%A4%A7%E8%B5%9B%23&Refer=top',
+ 'keyword': '好看的卧蚕大赛',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '13',
+ 'hot': '465431',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%AF%94%E4%BC%AF%E5%90%A6%E8%AE%A4%E7%BB%93%E5%A9%9A%E6%98%AF%E6%8A%A5%E5%A4%8D%E8%B5%9B%E7%90%B3%E5%A8%9C%23&Refer=top',
+ 'keyword': '比伯否认结婚是报复赛琳娜',
+ 'state': '热'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '14',
+ 'hot': '374336',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%A2%AB%E6%90%AD%E8%AE%AA%E6%97%B6%E7%AC%AC%E4%B8%80%E5%8F%8D%E5%BA%94%23&Refer=top',
+ 'keyword': '被搭讪时第一反应',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '15',
+ 'hot': '315182',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E4%B9%90%E4%B9%90%20%E5%85%81%E6%81%A9&Refer=top',
+ 'keyword': '王乐乐 允恩',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '16',
+ 'hot': '313346',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%91%A8%E5%87%AF%E7%BF%94%E7%8E%8B%E5%BE%B7%E6%89%8D%E5%88%A0%E5%8D%9A%23&Refer=top',
+ 'keyword': '周凯翔王德才删博',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '17',
+ 'hot': '312148',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AB%8C%E8%A1%8C%E6%9D%8E%E5%A4%AA%E5%A4%9A%E6%89%94%E6%8E%8966800%E5%85%83%E7%8E%B0%E9%87%91%23&Refer=top',
+ 'keyword': '嫌行李太多扔掉66800元现金',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '18',
+ 'hot': '310653',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%B2%8D%E4%BA%91&Refer=top',
+ 'keyword': '鲍云',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '19',
+ 'hot': '309029',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8C%83%E5%86%B0%E5%86%B0%E7%BE%8E%E5%AE%B9%E9%99%A2%E6%94%B6%E8%B4%B9%E6%A0%87%E5%87%86%23&Refer=top',
+ 'keyword': '范冰冰美容院收费标准',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '20',
+ 'hot': '307196',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%88%91%E5%9B%BD%E6%9C%AA%E6%88%90%E5%B9%B4%E7%BD%91%E6%B0%91%E4%BA%BA%E6%95%B0&Refer=top',
+ 'keyword': '我国未成年网民人数',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '21',
+ 'hot': '255002',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%20%E6%B2%B9%E8%8F%9C%E7%B1%BD%E8%BF%9B%E5%8F%A3%E7%A6%81%E4%BB%A4&Refer=top',
+ 'keyword': '中国加拿大 油菜籽进口禁令',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '22',
+ 'hot': '243650',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%B0%91%E5%B9%B4%E9%81%AD%E9%9C%B8%E5%87%8C%E8%87%B41%E6%AD%BB%E5%88%A48%E5%B9%B4%23&Refer=top',
+ 'keyword': '少年遭霸凌致1死判8年',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '23',
+ 'hot': '230608',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%BF%83%E7%96%BC%E5%A8%9C%E7%BE%8E%23&Refer=top',
+ 'keyword': '心疼娜美',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '24',
+ 'hot': '194368',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%BF%AA%E6%8B%9C%E7%9A%84%E5%AE%9D%E5%AE%9D%E5%93%AD%E4%BA%86%E6%80%8E%E4%B9%88%E5%93%84%23&Refer=top',
+ 'keyword': '迪拜的宝宝哭了怎么哄',
+ 'state': '热'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '25',
+ 'hot': '193437',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%B8%8A%E5%A4%96%E7%94%B7%E7%94%9F%E5%AE%BF%E8%88%8D&Refer=top',
+ 'keyword': '上外男生宿舍',
+ 'state': '热'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '26',
+ 'hot': '192308',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%9D%A8%E6%B8%85%E6%9F%A0&Refer=top',
+ 'keyword': '杨清柠',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '27',
+ 'hot': '187586',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%BD%91%E5%8F%8B%E5%AE%B6%E7%9A%84%E7%8C%AB%E7%94%9F%E7%97%85%E4%BA%86&Refer=top',
+ 'keyword': '网友家的猫生病了',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '28',
+ 'hot': '185484',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E6%98%93%E6%9C%A8&Refer=top',
+ 'keyword': '王易木',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '29',
+ 'hot': '182824',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AE%9D%E8%97%8F%E5%90%83%E6%92%AD%E8%8B%8F%E5%A4%A7%E5%BC%BA%23&Refer=top',
+ 'keyword': '宝藏吃播苏大强',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '30',
+ 'hot': '179901',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E9%99%88%E6%9F%8F%E9%9C%96%E5%9B%9E%E5%BA%94%E4%B8%8E%E8%83%9C%E5%88%A9%E5%85%B3%E7%B3%BB%23&Refer=top',
+ 'keyword': '陈柏霖回应与胜利关系',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '31',
+ 'hot': '172378',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%83%E5%88%B0%E6%8A%98%E8%80%B3%E6%A0%B9%E7%9A%84%E6%84%9F%E8%A7%89%23&Refer=top',
+ 'keyword': '第一次吃到折耳根的感觉',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '32',
+ 'hot': '162054',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%88%B1%E8%B1%86%E4%B8%BA%E7%B2%89%E4%B8%9D%E6%93%8D%E7%A2%8E%E4%BA%86%E5%BF%83%23&Refer=top',
+ 'keyword': '爱豆为粉丝操碎了心',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '33',
+ 'hot': '156092',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%AD%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E9%80%80%E7%A7%9F%E5%90%8E%E7%9A%84%E5%85%AC%E5%AF%93%23&Refer=top',
+ 'keyword': '中国留学生退租后的公寓',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '34',
+ 'hot': '146118',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%BC%A0%E6%82%AC%E8%80%81%E5%85%AC&Refer=top',
+ 'keyword': '张悬老公',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '35',
+ 'hot': '130724',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%90%91%E7%9C%9F%E8%A2%AB%E5%88%86%E6%89%8B%23&Refer=top',
+ 'keyword': '向真被分手',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '36',
+ 'hot': '130335',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8C%83%E5%86%B0%E5%86%B0%E5%BC%80%E7%BE%8E%E5%AE%B9%E9%99%A2%23&Refer=top',
+ 'keyword': '范冰冰开美容院',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '37',
+ 'hot': '130091',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%B7%B1%E5%9C%B3%E5%9C%B0%E9%93%813%E5%8F%B7%E7%BA%BF%23&Refer=top',
+ 'keyword': '深圳地铁3号线',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '38',
+ 'hot': '125212',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%9D%92%E6%98%A5%E6%9C%89%E4%BD%A0&Refer=top',
+ 'keyword': '青春有你',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '39',
+ 'hot': '123236',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%80%E4%B8%AA%E5%8C%BB%E5%AD%A6%E7%94%9F%E7%9A%84%E6%89%8B%E6%9C%BA%E7%9B%B8%E5%86%8C%23&Refer=top',
+ 'keyword': '一个医学生的手机相册',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '40',
+ 'hot': '101508',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%BD%A0%E6%8B%8D%E6%91%84%E8%BF%87%E7%9A%84%E5%A4%9C%E6%99%AF%23&Refer=top',
+ 'keyword': '你拍摄过的夜景',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '41',
+ 'hot': '96505',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%8D%8E%E4%B8%BAP30%E5%8F%91%E5%B8%83%E4%BC%9A%23&Refer=top',
+ 'keyword': '华为P30发布会',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '42',
+ 'hot': '93146',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%B5%B5%E8%81%AA%E5%8E%BB%E5%93%AA%E4%BA%86%23&Refer=top',
+ 'keyword': '赵聪去哪了',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '43',
+ 'hot': '87783',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8B%8F%E5%A4%A7%E5%BC%BA%E4%B9%8B%E6%AD%8C%23&Refer=top',
+ 'keyword': '苏大强之歌',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '44',
+ 'hot': '87677',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%94%AF%E4%BB%98%E5%AE%9D%E8%BF%98%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%94%B6%E8%B4%B9&Refer=top',
+ 'keyword': '支付宝还信用卡收费',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '45',
+ 'hot': '81000',
+ 'href': 'https://s.weibo.com/weibo?q=%E8%8B%B1%E5%9B%BD%E7%8E%8B%E5%AD%90%E6%9F%A5%E5%B0%94%E6%96%AF%E5%A9%89%E6%8B%92%E5%89%AA%E5%A4%B4&Refer=top',
+ 'keyword': '英国王子查尔斯婉拒剪头',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '46',
+ 'hot': '79462',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%81%E5%85%B0%E5%A6%88%E5%A6%88%23&Refer=top',
+ 'keyword': '丁兰妈妈',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '47',
+ 'hot': '76855',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%B3%A2%E4%BB%80%E6%80%92%E5%90%BC&Refer=top',
+ 'keyword': '波什怒吼',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '48',
+ 'hot': '75883',
+ 'href': 'https://s.weibo.com/weibo?q=KPI%E8%80%83%E6%A0%B8%E6%98%93%E5%BC%95%E5%8F%91%E5%91%98%E5%B7%A5%E5%BF%83%E7%90%86%E9%97%AE%E9%A2%98&Refer=top',
+ 'keyword': 'KPI考核易引发员工心理问题',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '49',
+ 'hot': '63919',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%9B%E4%B8%BD%E5%AD%A6%E9%99%A2%E5%A5%BD%E5%A5%BD%E7%AC%91&Refer=top',
+ 'keyword': '玛丽学院好好笑',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '50',
+ 'hot': '54985',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%8A%E6%B5%B7%E6%9C%80%E4%BD%8E%E5%B7%A5%E8%B5%84%E4%B8%BA%E5%85%A8%E5%9B%BD%E6%9C%80%E9%AB%98%23&Refer=top',
+ 'keyword': '上海最低工资为全国最高',
+ 'state': '新'}
+2019-03-27 11:22:14 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-27 11:22:14 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1485,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 14871,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/302': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 27, 3, 22, 14, 843242),
+ 'item_scraped_count': 52,
+ 'log_count/DEBUG': 56,
+ 'log_count/INFO': 9,
+ 'memusage/max': 50061312,
+ 'memusage/startup': 50061312,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 3, 27, 3, 22, 14, 165500)}
+2019-03-27 11:22:14 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-03-27 11:44:46 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: WeiboHotSpider)
+2019-03-27 11:44:46 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.2 (default, Feb 13 2019, 10:07:58) - [Clang 10.0.0 (clang-1000.11.45.5)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.2.0-x86_64-i386-64bit
+2019-03-27 11:44:46 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'WeiboHotSpider', 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'WeiboHotSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['WeiboHotSpider.spiders']}
+2019-03-27 11:44:46 [scrapy.extensions.telnet] INFO: Telnet Password: 27d46c6d4d58c2e2
+2019-03-27 11:44:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-27 11:44:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-27 11:44:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-27 11:44:46 [scrapy.middleware] INFO: Enabled item pipelines:
+['WeiboHotSpider.pipelines.WeibohotspiderPipeline']
+2019-03-27 11:44:46 [scrapy.core.engine] INFO: Spider opened
+2019-03-27 11:44:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-27 11:44:46 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-03-27 11:44:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://weibo.com/sorry?pagenotfound&> from <GET https://s.weibo.com/robots.txt>
+2019-03-27 11:44:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fsorry%3Fpagenotfound%26&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1553658286.3404> from <GET https://weibo.com/sorry?pagenotfound&>
+2019-03-27 11:44:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fsorry%3Fpagenotfound%26&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1553658286.3404> (referer: None)
+2019-03-27 11:44:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://s.weibo.com/top/summary?cate=realtimehot> (referer: None)
+2019-03-27 11:44:46 [scrapy.core.scraper] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/a824810056/Desktop/WeiboHotSpider/WeiboHotSpider/WeiboHotSpider/pipelines.py", line 36, in process_item
+    data_row = [item["NO"], item["keyword"], item["state"], item["hot"], item["href"]]
+  File "/usr/local/lib/python3.7/site-packages/scrapy/item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'NO'
+2019-03-27 11:44:46 [scrapy.core.scraper] ERROR: Error processing {'href': 'https://s.weibo.com/weibo?q=%E7%94%9F%E8%82%B2%E4%BF%9D%E9%99%A9%E5%92%8C%E5%8C%BB%E4%BF%9D%E5%90%88%E5%B9%B6&Refer=new_time',
+ 'keyword': '生育保险和医保合并',
+ 'state': '热'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/a824810056/Desktop/WeiboHotSpider/WeiboHotSpider/WeiboHotSpider/pipelines.py", line 36, in process_item
+    data_row = [item["NO"], item["keyword"], item["state"], item["hot"], item["href"]]
+  File "/usr/local/lib/python3.7/site-packages/scrapy/item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'NO'
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '1',
+ 'hot': '2512194',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%90%91%E4%BD%90%E6%B1%82%E5%A9%9A%E9%83%AD%E7%A2%A7%E5%A9%B7%23&Refer=top',
+ 'keyword': '向佐求婚郭碧婷',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '2',
+ 'hot': '1433939',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%BC%A0%E6%82%AC%E6%80%80%E5%AD%95%23&Refer=top',
+ 'keyword': '张悬怀孕',
+ 'state': '沸'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '3',
+ 'hot': '1350168',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%80%E6%9E%B6%E6%B3%A2%E9%9F%B3737max%E7%B4%A7%E6%80%A5%E8%BF%AB%E9%99%8D%23&Refer=top',
+ 'keyword': '一架波音737max紧急迫降',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '4',
+ 'hot': '1294264',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E9%83%AD%E7%A2%A7%E5%A9%B7%E9%92%BB%E6%88%92%23&Refer=top',
+ 'keyword': '郭碧婷钻戒',
+ 'state': '沸'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '5',
+ 'hot': '887309',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%AF%B7%E9%BB%84%E5%AD%90%E9%9F%AC%E5%AF%B9%E5%90%8C%E7%BB%84%E5%A5%B3%E6%BC%94%E5%91%98%E6%B8%A9%E6%9F%94%E4%B8%80%E7%82%B9%23&Refer=top',
+ 'keyword': '请黄子韬对同组女演员温柔一点',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '6',
+ 'hot': '798331',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AB%82%E5%AD%90101%23&Refer=top',
+ 'keyword': '嫂子101',
+ 'state': '沸'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '7',
+ 'hot': '688194',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%A5%BD%E7%9C%8B%E7%9A%84%E5%8D%A7%E8%9A%95%E5%A4%A7%E8%B5%9B%23&Refer=top',
+ 'keyword': '好看的卧蚕大赛',
+ 'state': '沸'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '8',
+ 'hot': '640076',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%88%91%E5%9B%BD%E6%9C%AA%E6%88%90%E5%B9%B4%E7%BD%91%E6%B0%91%E4%BA%BA%E6%95%B0%23&Refer=top',
+ 'keyword': '我国未成年网民人数',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '9',
+ 'hot': '632813',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%A4%A7%E5%A6%88%E5%B8%A6%E8%80%B3%E6%9C%BA%E8%B7%B3%E5%B9%BF%E5%9C%BA%E8%88%9E%23&Refer=top',
+ 'keyword': '大妈带耳机跳广场舞',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '10',
+ 'hot': '627679',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%8E%8B%E5%BF%83%E5%87%8C%20%E8%84%B8%23&Refer=top',
+ 'keyword': '王心凌 脸',
+ 'state': '沸'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '11',
+ 'hot': '467051',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%B5%AA%E6%BC%AB%E5%88%B0%E9%AA%A8%E5%AD%90%E9%87%8C%E7%9A%84%E5%8F%A5%E5%AD%90%23&Refer=top',
+ 'keyword': '浪漫到骨子里的句子',
+ 'state': '沸'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '12',
+ 'hot': '389207',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%AF%94%E4%BC%AF%E5%90%A6%E8%AE%A4%E7%BB%93%E5%A9%9A%E6%98%AF%E6%8A%A5%E5%A4%8D%E8%B5%9B%E7%90%B3%E5%A8%9C%23&Refer=top',
+ 'keyword': '比伯否认结婚是报复赛琳娜',
+ 'state': '热'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '13',
+ 'hot': '348991',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%A2%AB%E6%90%AD%E8%AE%AA%E6%97%B6%E7%AC%AC%E4%B8%80%E5%8F%8D%E5%BA%94%23&Refer=top',
+ 'keyword': '被搭讪时第一反应',
+ 'state': '热'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '14',
+ 'hot': '275024',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E4%B9%90%E4%B9%90%20%E5%85%81%E6%81%A9&Refer=top',
+ 'keyword': '王乐乐 允恩',
+ 'state': '热'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '15',
+ 'hot': '256772',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%20%E6%B2%B9%E8%8F%9C%E7%B1%BD%E8%BF%9B%E5%8F%A3%E7%A6%81%E4%BB%A4&Refer=top',
+ 'keyword': '中国加拿大 油菜籽进口禁令',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '16',
+ 'hot': '255625',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AB%8C%E8%A1%8C%E6%9D%8E%E5%A4%AA%E5%A4%9A%E6%89%94%E6%8E%8966800%E5%85%83%E7%8E%B0%E9%87%91%23&Refer=top',
+ 'keyword': '嫌行李太多扔掉66800元现金',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '17',
+ 'hot': '255330',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%B2%8D%E4%BA%91&Refer=top',
+ 'keyword': '鲍云',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '18',
+ 'hot': '251430',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%9D%A8%E6%B8%85%E6%9F%A0&Refer=top',
+ 'keyword': '杨清柠',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '19',
+ 'hot': '227438',
+ 'href': 'https://s.weibo.com/weibo?q=%E8%83%9C%E5%88%A9%E6%8E%A5%E5%8F%97%E8%B0%83%E6%9F%A5%E5%89%8D%E5%88%B0%E7%BE%8E%E5%AE%B9%E9%99%A2%E5%8C%96%E5%A6%86&Refer=top',
+ 'keyword': '胜利接受调查前到美容院化妆',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '20',
+ 'hot': '212794',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%82%85%E5%9B%AD%E6%85%A7100%E7%B1%B3%E4%BB%B0%E6%B3%B3%E5%86%A0%E5%86%9B%23&Refer=top',
+ 'keyword': '傅园慧100米仰泳冠军',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '21',
+ 'hot': '211785',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%B0%91%E5%B9%B4%E9%81%AD%E9%9C%B8%E5%87%8C%E8%87%B41%E6%AD%BB%E5%88%A48%E5%B9%B4%23&Refer=top',
+ 'keyword': '少年遭霸凌致1死判8年',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '22',
+ 'hot': '208025',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%BF%83%E7%96%BC%E5%A8%9C%E7%BE%8E%23&Refer=top',
+ 'keyword': '心疼娜美',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '23',
+ 'hot': '196859',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%BF%AA%E6%8B%9C%E7%9A%84%E5%AE%9D%E5%AE%9D%E5%93%AD%E4%BA%86%E6%80%8E%E4%B9%88%E5%93%84%23&Refer=top',
+ 'keyword': '迪拜的宝宝哭了怎么哄',
+ 'state': '热'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '24',
+ 'hot': '189772',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E6%98%93%E6%9C%A8&Refer=top',
+ 'keyword': '王易木',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '25',
+ 'hot': '187380',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%BD%91%E5%8F%8B%E5%AE%B6%E7%9A%84%E7%8C%AB%E7%94%9F%E7%97%85%E4%BA%86&Refer=top',
+ 'keyword': '网友家的猫生病了',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '26',
+ 'hot': '163637',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%B8%8A%E5%A4%96%E7%94%B7%E7%94%9F%E5%AE%BF%E8%88%8D&Refer=top',
+ 'keyword': '上外男生宿舍',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '27',
+ 'hot': '161415',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AE%9D%E8%97%8F%E5%90%83%E6%92%AD%E8%8B%8F%E5%A4%A7%E5%BC%BA%23&Refer=top',
+ 'keyword': '宝藏吃播苏大强',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '28',
+ 'hot': '160343',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%BD%A0%E7%9A%84%E7%8E%8B%E4%B9%90%E4%B9%90&Refer=top',
+ 'keyword': '你的王乐乐',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '29',
+ 'hot': '151413',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%83%E5%88%B0%E6%8A%98%E8%80%B3%E6%A0%B9%E7%9A%84%E6%84%9F%E8%A7%89%23&Refer=top',
+ 'keyword': '第一次吃到折耳根的感觉',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '30',
+ 'hot': '136724',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%9B%B9%E5%9B%AD%E5%8D%B3%E6%97%A5%E8%B5%B7%E8%87%AA%E8%A1%8C%E6%8B%86%E9%99%A4%23&Refer=top',
+ 'keyword': '曹园即日起自行拆除',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '31',
+ 'hot': '136138',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8C%83%E5%86%B0%E5%86%B0%E7%BE%8E%E5%AE%B9%E9%99%A2%E6%94%B6%E8%B4%B9%E6%A0%87%E5%87%86%23&Refer=top',
+ 'keyword': '范冰冰美容院收费标准',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '32',
+ 'hot': '135886',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%91%A8%E5%87%AF%E7%BF%94%E7%8E%8B%E5%BE%B7%E6%89%8D%E5%88%A0%E5%8D%9A%23&Refer=top',
+ 'keyword': '周凯翔王德才删博',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '33',
+ 'hot': '133811',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E9%99%88%E6%9F%8F%E9%9C%96%E5%9B%9E%E5%BA%94%E4%B8%8E%E8%83%9C%E5%88%A9%E5%85%B3%E7%B3%BB%23&Refer=top',
+ 'keyword': '陈柏霖回应与胜利关系',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '34',
+ 'hot': '126125',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%88%B1%E8%B1%86%E4%B8%BA%E7%B2%89%E4%B8%9D%E6%93%8D%E7%A2%8E%E4%BA%86%E5%BF%83%23&Refer=top',
+ 'keyword': '爱豆为粉丝操碎了心',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '35',
+ 'hot': '125542',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%BC%A0%E6%82%AC%E8%80%81%E5%85%AC&Refer=top',
+ 'keyword': '张悬老公',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '36',
+ 'hot': '124435',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%AD%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E9%80%80%E7%A7%9F%E5%90%8E%E7%9A%84%E5%85%AC%E5%AF%93%23&Refer=top',
+ 'keyword': '中国留学生退租后的公寓',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '37',
+ 'hot': '121532',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%90%91%E7%9C%9F%E8%A2%AB%E5%88%86%E6%89%8B%23&Refer=top',
+ 'keyword': '向真被分手',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '38',
+ 'hot': '111480',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%80%E4%B8%AA%E5%8C%BB%E5%AD%A6%E7%94%9F%E7%9A%84%E6%89%8B%E6%9C%BA%E7%9B%B8%E5%86%8C%23&Refer=top',
+ 'keyword': '一个医学生的手机相册',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '39',
+ 'hot': '107698',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%B7%B1%E5%9C%B3%E5%9C%B0%E9%93%813%E5%8F%B7%E7%BA%BF%23&Refer=top',
+ 'keyword': '深圳地铁3号线',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '40',
+ 'hot': '104491',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%9D%92%E6%98%A5%E6%9C%89%E4%BD%A0&Refer=top',
+ 'keyword': '青春有你',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '41',
+ 'hot': '97437',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8C%83%E5%86%B0%E5%86%B0%E5%BC%80%E7%BE%8E%E5%AE%B9%E9%99%A2%23&Refer=top',
+ 'keyword': '范冰冰开美容院',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '42',
+ 'hot': '92539',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%9B%BD%E6%B3%B0%E8%88%AA%E7%A9%BA%E6%94%B6%E8%B4%AD%E9%A6%99%E6%B8%AF%E5%BF%AB%E8%BF%90&Refer=top',
+ 'keyword': '国泰航空收购香港快运',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '43',
+ 'hot': '91476',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%BD%A0%E6%8B%8D%E6%91%84%E8%BF%87%E7%9A%84%E5%A4%9C%E6%99%AF%23&Refer=top',
+ 'keyword': '你拍摄过的夜景',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '44',
+ 'hot': '85134',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%A5%B3%E6%9C%8B%E5%8F%8B%E7%83%A7%E7%9A%84%E8%8F%9C&Refer=top',
+ 'keyword': '女朋友烧的菜',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '45',
+ 'hot': '84387',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%8F%B2%E8%92%82%E8%8A%AC%E6%A3%AE%E6%99%83%E5%80%92%E6%A0%BC%E6%9E%97&Refer=top',
+ 'keyword': '史蒂芬森晃倒格林',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '46',
+ 'hot': '84257',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%94%AF%E4%BB%98%E5%AE%9D%E8%BF%98%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%94%B6%E8%B4%B9&Refer=top',
+ 'keyword': '支付宝还信用卡收费',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '47',
+ 'hot': '83135',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8B%8F%E5%A4%A7%E5%BC%BA%E4%B9%8B%E6%AD%8C%23&Refer=top',
+ 'keyword': '苏大强之歌',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '48',
+ 'hot': '80719',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%8D%8E%E4%B8%BAP30%E5%8F%91%E5%B8%83%E4%BC%9A%23&Refer=top',
+ 'keyword': '华为P30发布会',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '49',
+ 'hot': '75576',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%B5%B5%E8%81%AA%E5%8E%BB%E5%93%AA%E4%BA%86%23&Refer=top',
+ 'keyword': '赵聪去哪了',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '50',
+ 'hot': '69850',
+ 'href': 'https://s.weibo.com/weibo?q=KPI%E8%80%83%E6%A0%B8%E6%98%93%E5%BC%95%E5%8F%91%E5%91%98%E5%B7%A5%E5%BF%83%E7%90%86%E9%97%AE%E9%A2%98&Refer=top',
+ 'keyword': 'KPI考核易引发员工心理问题',
+ 'state': '新'}
+2019-03-27 11:44:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-27 11:44:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1485,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 14765,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/302': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 27, 3, 44, 46, 902482),
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 54,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 9,
+ 'memusage/max': 50049024,
+ 'memusage/startup': 50044928,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 3, 27, 3, 44, 46, 116337)}
+2019-03-27 11:44:46 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-03-27 11:45:35 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: WeiboHotSpider)
+2019-03-27 11:45:35 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.2 (default, Feb 13 2019, 10:07:58) - [Clang 10.0.0 (clang-1000.11.45.5)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.2.0-x86_64-i386-64bit
+2019-03-27 11:45:35 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'WeiboHotSpider', 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'WeiboHotSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['WeiboHotSpider.spiders']}
+2019-03-27 11:45:35 [scrapy.extensions.telnet] INFO: Telnet Password: dbb69ebda2749346
+2019-03-27 11:45:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-27 11:45:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-27 11:45:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-27 11:45:35 [scrapy.middleware] INFO: Enabled item pipelines:
+['WeiboHotSpider.pipelines.WeibohotspiderPipeline']
+2019-03-27 11:45:35 [scrapy.core.engine] INFO: Spider opened
+2019-03-27 11:45:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-27 11:45:35 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-03-27 11:45:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://weibo.com/sorry?pagenotfound&> from <GET https://s.weibo.com/robots.txt>
+2019-03-27 11:45:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fsorry%3Fpagenotfound%26&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1553658335.784> from <GET https://weibo.com/sorry?pagenotfound&>
+2019-03-27 11:45:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fsorry%3Fpagenotfound%26&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1553658335.784> (referer: None)
+2019-03-27 11:45:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://s.weibo.com/top/summary?cate=realtimehot> (referer: None)
+2019-03-27 11:45:36 [scrapy.core.scraper] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/a824810056/Desktop/WeiboHotSpider/WeiboHotSpider/WeiboHotSpider/pipelines.py", line 36, in process_item
+    data_row = [item["NO"], item["keyword"], item["state"], item["hot"], item["href"]]
+  File "/usr/local/lib/python3.7/site-packages/scrapy/item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'NO'
+2019-03-27 11:45:36 [scrapy.core.scraper] ERROR: Error processing {'href': 'https://s.weibo.com/weibo?q=%E7%94%9F%E8%82%B2%E4%BF%9D%E9%99%A9%E5%92%8C%E5%8C%BB%E4%BF%9D%E5%90%88%E5%B9%B6&Refer=new_time',
+ 'keyword': '生育保险和医保合并',
+ 'state': '热'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/a824810056/Desktop/WeiboHotSpider/WeiboHotSpider/WeiboHotSpider/pipelines.py", line 36, in process_item
+    data_row = [item["NO"], item["keyword"], item["state"], item["hot"], item["href"]]
+  File "/usr/local/lib/python3.7/site-packages/scrapy/item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'NO'
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '1',
+ 'hot': '2551830',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%90%91%E4%BD%90%E6%B1%82%E5%A9%9A%E9%83%AD%E7%A2%A7%E5%A9%B7%23&Refer=top',
+ 'keyword': '向佐求婚郭碧婷',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '2',
+ 'hot': '1414680',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%BC%A0%E6%82%AC%E6%80%80%E5%AD%95%23&Refer=top',
+ 'keyword': '张悬怀孕',
+ 'state': '沸'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '3',
+ 'hot': '1336591',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%80%E6%9E%B6%E6%B3%A2%E9%9F%B3737max%E7%B4%A7%E6%80%A5%E8%BF%AB%E9%99%8D%23&Refer=top',
+ 'keyword': '一架波音737max紧急迫降',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '4',
+ 'hot': '1285462',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E9%83%AD%E7%A2%A7%E5%A9%B7%E9%92%BB%E6%88%92%23&Refer=top',
+ 'keyword': '郭碧婷钻戒',
+ 'state': '热'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '5',
+ 'hot': '940172',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%AF%B7%E9%BB%84%E5%AD%90%E9%9F%AC%E5%AF%B9%E5%90%8C%E7%BB%84%E5%A5%B3%E6%BC%94%E5%91%98%E6%B8%A9%E6%9F%94%E4%B8%80%E7%82%B9%23&Refer=top',
+ 'keyword': '请黄子韬对同组女演员温柔一点',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '6',
+ 'hot': '791284',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AB%82%E5%AD%90101%23&Refer=top',
+ 'keyword': '嫂子101',
+ 'state': '热'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '7',
+ 'hot': '696520',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%A5%BD%E7%9C%8B%E7%9A%84%E5%8D%A7%E8%9A%95%E5%A4%A7%E8%B5%9B%23&Refer=top',
+ 'keyword': '好看的卧蚕大赛',
+ 'state': '热'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '8',
+ 'hot': '627380',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%88%91%E5%9B%BD%E6%9C%AA%E6%88%90%E5%B9%B4%E7%BD%91%E6%B0%91%E4%BA%BA%E6%95%B0%23&Refer=top',
+ 'keyword': '我国未成年网民人数',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '9',
+ 'hot': '619697',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%A4%A7%E5%A6%88%E5%B8%A6%E8%80%B3%E6%9C%BA%E8%B7%B3%E5%B9%BF%E5%9C%BA%E8%88%9E%23&Refer=top',
+ 'keyword': '大妈带耳机跳广场舞',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '10',
+ 'hot': '618307',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E5%BF%83%E5%87%8C%20%E8%84%B8&Refer=top',
+ 'keyword': '王心凌 脸',
+ 'state': '热'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '11',
+ 'hot': '462387',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%B5%AA%E6%BC%AB%E5%88%B0%E9%AA%A8%E5%AD%90%E9%87%8C%E7%9A%84%E5%8F%A5%E5%AD%90%23&Refer=top',
+ 'keyword': '浪漫到骨子里的句子',
+ 'state': '热'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '12',
+ 'hot': '383490',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%AF%94%E4%BC%AF%E5%90%A6%E8%AE%A4%E7%BB%93%E5%A9%9A%E6%98%AF%E6%8A%A5%E5%A4%8D%E8%B5%9B%E7%90%B3%E5%A8%9C%23&Refer=top',
+ 'keyword': '比伯否认结婚是报复赛琳娜',
+ 'state': '热'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '13',
+ 'hot': '346479',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%A2%AB%E6%90%AD%E8%AE%AA%E6%97%B6%E7%AC%AC%E4%B8%80%E5%8F%8D%E5%BA%94%23&Refer=top',
+ 'keyword': '被搭讪时第一反应',
+ 'state': '热'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '14',
+ 'hot': '274626',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E4%B9%90%E4%B9%90%20%E5%85%81%E6%81%A9&Refer=top',
+ 'keyword': '王乐乐 允恩',
+ 'state': '热'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '15',
+ 'hot': '257206',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%20%E6%B2%B9%E8%8F%9C%E7%B1%BD%E8%BF%9B%E5%8F%A3%E7%A6%81%E4%BB%A4&Refer=top',
+ 'keyword': '中国加拿大 油菜籽进口禁令',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '16',
+ 'hot': '256344',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AB%8C%E8%A1%8C%E6%9D%8E%E5%A4%AA%E5%A4%9A%E6%89%94%E6%8E%8966800%E5%85%83%E7%8E%B0%E9%87%91%23&Refer=top',
+ 'keyword': '嫌行李太多扔掉66800元现金',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '17',
+ 'hot': '255800',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%B2%8D%E4%BA%91&Refer=top',
+ 'keyword': '鲍云',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '18',
+ 'hot': '254071',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%9D%A8%E6%B8%85%E6%9F%A0&Refer=top',
+ 'keyword': '杨清柠',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '19',
+ 'hot': '250504',
+ 'href': 'https://s.weibo.com/weibo?q=%E8%83%9C%E5%88%A9%E6%8E%A5%E5%8F%97%E8%B0%83%E6%9F%A5%E5%89%8D%E5%88%B0%E7%BE%8E%E5%AE%B9%E9%99%A2%E5%8C%96%E5%A6%86&Refer=top',
+ 'keyword': '胜利接受调查前到美容院化妆',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '20',
+ 'hot': '211561',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%82%85%E5%9B%AD%E6%85%A7100%E7%B1%B3%E4%BB%B0%E6%B3%B3%E5%86%A0%E5%86%9B%23&Refer=top',
+ 'keyword': '傅园慧100米仰泳冠军',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '21',
+ 'hot': '208330',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%B0%91%E5%B9%B4%E9%81%AD%E9%9C%B8%E5%87%8C%E8%87%B41%E6%AD%BB%E5%88%A48%E5%B9%B4%23&Refer=top',
+ 'keyword': '少年遭霸凌致1死判8年',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '22',
+ 'hot': '204310',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%BF%83%E7%96%BC%E5%A8%9C%E7%BE%8E%23&Refer=top',
+ 'keyword': '心疼娜美',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '23',
+ 'hot': '195594',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%BF%AA%E6%8B%9C%E7%9A%84%E5%AE%9D%E5%AE%9D%E5%93%AD%E4%BA%86%E6%80%8E%E4%B9%88%E5%93%84%23&Refer=top',
+ 'keyword': '迪拜的宝宝哭了怎么哄',
+ 'state': '热'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '24',
+ 'hot': '187805',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E6%98%93%E6%9C%A8&Refer=top',
+ 'keyword': '王易木',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '25',
+ 'hot': '186125',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%BD%91%E5%8F%8B%E5%AE%B6%E7%9A%84%E7%8C%AB%E7%94%9F%E7%97%85%E4%BA%86&Refer=top',
+ 'keyword': '网友家的猫生病了',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '26',
+ 'hot': '170954',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%BD%A0%E7%9A%84%E7%8E%8B%E4%B9%90%E4%B9%90&Refer=top',
+ 'keyword': '你的王乐乐',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '27',
+ 'hot': '161533',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%B8%8A%E5%A4%96%E7%94%B7%E7%94%9F%E5%AE%BF%E8%88%8D&Refer=top',
+ 'keyword': '上外男生宿舍',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '28',
+ 'hot': '159103',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AE%9D%E8%97%8F%E5%90%83%E6%92%AD%E8%8B%8F%E5%A4%A7%E5%BC%BA%23&Refer=top',
+ 'keyword': '宝藏吃播苏大强',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '29',
+ 'hot': '150474',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%83%E5%88%B0%E6%8A%98%E8%80%B3%E6%A0%B9%E7%9A%84%E6%84%9F%E8%A7%89%23&Refer=top',
+ 'keyword': '第一次吃到折耳根的感觉',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '30',
+ 'hot': '132581',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%9B%B9%E5%9B%AD%E5%8D%B3%E6%97%A5%E8%B5%B7%E8%87%AA%E8%A1%8C%E6%8B%86%E9%99%A4%23&Refer=top',
+ 'keyword': '曹园即日起自行拆除',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '31',
+ 'hot': '132512',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%91%A8%E5%87%AF%E7%BF%94%E7%8E%8B%E5%BE%B7%E6%89%8D%E5%88%A0%E5%8D%9A%23&Refer=top',
+ 'keyword': '周凯翔王德才删博',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '32',
+ 'hot': '132394',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8C%83%E5%86%B0%E5%86%B0%E7%BE%8E%E5%AE%B9%E9%99%A2%E6%94%B6%E8%B4%B9%E6%A0%87%E5%87%86%23&Refer=top',
+ 'keyword': '范冰冰美容院收费标准',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '33',
+ 'hot': '132227',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E9%99%88%E6%9F%8F%E9%9C%96%E5%9B%9E%E5%BA%94%E4%B8%8E%E8%83%9C%E5%88%A9%E5%85%B3%E7%B3%BB%23&Refer=top',
+ 'keyword': '陈柏霖回应与胜利关系',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '34',
+ 'hot': '124590',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%88%B1%E8%B1%86%E4%B8%BA%E7%B2%89%E4%B8%9D%E6%93%8D%E7%A2%8E%E4%BA%86%E5%BF%83%23&Refer=top',
+ 'keyword': '爱豆为粉丝操碎了心',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '35',
+ 'hot': '124555',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%BC%A0%E6%82%AC%E8%80%81%E5%85%AC&Refer=top',
+ 'keyword': '张悬老公',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '36',
+ 'hot': '123066',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%AD%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E9%80%80%E7%A7%9F%E5%90%8E%E7%9A%84%E5%85%AC%E5%AF%93%23&Refer=top',
+ 'keyword': '中国留学生退租后的公寓',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '37',
+ 'hot': '120004',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%90%91%E7%9C%9F%E8%A2%AB%E5%88%86%E6%89%8B%23&Refer=top',
+ 'keyword': '向真被分手',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '38',
+ 'hot': '110536',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%80%E4%B8%AA%E5%8C%BB%E5%AD%A6%E7%94%9F%E7%9A%84%E6%89%8B%E6%9C%BA%E7%9B%B8%E5%86%8C%23&Refer=top',
+ 'keyword': '一个医学生的手机相册',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '39',
+ 'hot': '106300',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%B7%B1%E5%9C%B3%E5%9C%B0%E9%93%813%E5%8F%B7%E7%BA%BF%23&Refer=top',
+ 'keyword': '深圳地铁3号线',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '40',
+ 'hot': '104268',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%9D%92%E6%98%A5%E6%9C%89%E4%BD%A0&Refer=top',
+ 'keyword': '青春有你',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '41',
+ 'hot': '89889',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8C%83%E5%86%B0%E5%86%B0%E5%BC%80%E7%BE%8E%E5%AE%B9%E9%99%A2%23&Refer=top',
+ 'keyword': '范冰冰开美容院',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '42',
+ 'hot': '87259',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%9B%BD%E6%B3%B0%E8%88%AA%E7%A9%BA%E6%94%B6%E8%B4%AD%E9%A6%99%E6%B8%AF%E5%BF%AB%E8%BF%90&Refer=top',
+ 'keyword': '国泰航空收购香港快运',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '43',
+ 'hot': '85009',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%A5%B3%E6%9C%8B%E5%8F%8B%E7%83%A7%E7%9A%84%E8%8F%9C&Refer=top',
+ 'keyword': '女朋友烧的菜',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '44',
+ 'hot': '84933',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%BD%A0%E6%8B%8D%E6%91%84%E8%BF%87%E7%9A%84%E5%A4%9C%E6%99%AF%23&Refer=top',
+ 'keyword': '你拍摄过的夜景',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '45',
+ 'hot': '83859',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%94%AF%E4%BB%98%E5%AE%9D%E8%BF%98%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%94%B6%E8%B4%B9&Refer=top',
+ 'keyword': '支付宝还信用卡收费',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '46',
+ 'hot': '82865',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8B%8F%E5%A4%A7%E5%BC%BA%E4%B9%8B%E6%AD%8C%23&Refer=top',
+ 'keyword': '苏大强之歌',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '47',
+ 'hot': '80958',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%8F%B2%E8%92%82%E8%8A%AC%E6%A3%AE%E6%99%83%E5%80%92%E6%A0%BC%E6%9E%97&Refer=top',
+ 'keyword': '史蒂芬森晃倒格林',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '48',
+ 'hot': '80785',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%8D%8E%E4%B8%BAP30%E5%8F%91%E5%B8%83%E4%BC%9A%23&Refer=top',
+ 'keyword': '华为P30发布会',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '49',
+ 'hot': '74824',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%B5%B5%E8%81%AA%E5%8E%BB%E5%93%AA%E4%BA%86%23&Refer=top',
+ 'keyword': '赵聪去哪了',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '50',
+ 'hot': '68554',
+ 'href': 'https://s.weibo.com/weibo?q=KPI%E8%80%83%E6%A0%B8%E6%98%93%E5%BC%95%E5%8F%91%E5%91%98%E5%B7%A5%E5%BF%83%E7%90%86%E9%97%AE%E9%A2%98&Refer=top',
+ 'keyword': 'KPI考核易引发员工心理问题',
+ 'state': '新'}
+2019-03-27 11:45:36 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-27 11:45:36 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1484,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 10526,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/302': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 27, 3, 45, 36, 86293),
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 54,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 9,
+ 'memusage/max': 49795072,
+ 'memusage/startup': 49795072,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 3, 27, 3, 45, 35, 611218)}
+2019-03-27 11:45:36 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-03-27 11:46:33 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: WeiboHotSpider)
+2019-03-27 11:46:33 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.2 (default, Feb 13 2019, 10:07:58) - [Clang 10.0.0 (clang-1000.11.45.5)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.2.0-x86_64-i386-64bit
+2019-03-27 11:46:33 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'WeiboHotSpider', 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'WeiboHotSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['WeiboHotSpider.spiders']}
+2019-03-27 11:46:33 [scrapy.extensions.telnet] INFO: Telnet Password: de173607223d8dc9
+2019-03-27 11:46:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-27 11:46:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-27 11:46:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-27 11:46:33 [scrapy.middleware] INFO: Enabled item pipelines:
+['WeiboHotSpider.pipelines.WeibohotspiderPipeline']
+2019-03-27 11:46:33 [scrapy.core.engine] INFO: Spider opened
+2019-03-27 11:46:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-27 11:46:33 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-03-27 11:46:33 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://weibo.com/sorry?pagenotfound&> from <GET https://s.weibo.com/robots.txt>
+2019-03-27 11:46:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fsorry%3Fpagenotfound%26&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1553658394.0067> from <GET https://weibo.com/sorry?pagenotfound&>
+2019-03-27 11:46:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fsorry%3Fpagenotfound%26&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1553658394.0067> (referer: None)
+2019-03-27 11:46:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://s.weibo.com/top/summary?cate=realtimehot> (referer: None)
+2019-03-27 11:46:34 [scrapy.core.scraper] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/a824810056/Desktop/WeiboHotSpider/WeiboHotSpider/WeiboHotSpider/pipelines.py", line 36, in process_item
+    data_row = [item["NO"], item["keyword"], item["state"], item["hot"], item["href"]]
+  File "/usr/local/lib/python3.7/site-packages/scrapy/item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'NO'
+2019-03-27 11:46:34 [scrapy.core.scraper] ERROR: Error processing {'href': 'https://s.weibo.com/weibo?q=%E4%B8%9C%E9%83%A8%E6%88%98%E5%8C%BA%E9%99%86%E5%86%9B%E5%AE%98%E5%BE%AE%E4%B8%8A%E7%BA%BF&Refer=new_time',
+ 'keyword': '东部战区陆军官微上线',
+ 'state': '热'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/a824810056/Desktop/WeiboHotSpider/WeiboHotSpider/WeiboHotSpider/pipelines.py", line 36, in process_item
+    data_row = [item["NO"], item["keyword"], item["state"], item["hot"], item["href"]]
+  File "/usr/local/lib/python3.7/site-packages/scrapy/item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'NO'
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '1',
+ 'hot': '2627681',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%90%91%E4%BD%90%E6%B1%82%E5%A9%9A%E9%83%AD%E7%A2%A7%E5%A9%B7%23&Refer=top',
+ 'keyword': '向佐求婚郭碧婷',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '2',
+ 'hot': '1370857',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%BC%A0%E6%82%AC%E6%80%80%E5%AD%95%23&Refer=top',
+ 'keyword': '张悬怀孕',
+ 'state': '沸'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '3',
+ 'hot': '1271939',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%80%E6%9E%B6%E6%B3%A2%E9%9F%B3737max%E7%B4%A7%E6%80%A5%E8%BF%AB%E9%99%8D%23&Refer=top',
+ 'keyword': '一架波音737max紧急迫降',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '4',
+ 'hot': '1269822',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E9%83%AD%E7%A2%A7%E5%A9%B7%E9%92%BB%E6%88%92%23&Refer=top',
+ 'keyword': '郭碧婷钻戒',
+ 'state': '热'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '5',
+ 'hot': '1063418',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%AF%B7%E9%BB%84%E5%AD%90%E9%9F%AC%E5%AF%B9%E5%90%8C%E7%BB%84%E5%A5%B3%E6%BC%94%E5%91%98%E6%B8%A9%E6%9F%94%E4%B8%80%E7%82%B9%23&Refer=top',
+ 'keyword': '请黄子韬对同组女演员温柔一点',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '6',
+ 'hot': '782832',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AB%82%E5%AD%90101%23&Refer=top',
+ 'keyword': '嫂子101',
+ 'state': '热'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '7',
+ 'hot': '702077',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%A5%BD%E7%9C%8B%E7%9A%84%E5%8D%A7%E8%9A%95%E5%A4%A7%E8%B5%9B%23&Refer=top',
+ 'keyword': '好看的卧蚕大赛',
+ 'state': '热'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '8',
+ 'hot': '619744',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%88%91%E5%9B%BD%E6%9C%AA%E6%88%90%E5%B9%B4%E7%BD%91%E6%B0%91%E4%BA%BA%E6%95%B0%23&Refer=top',
+ 'keyword': '我国未成年网民人数',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '9',
+ 'hot': '600381',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%A4%A7%E5%A6%88%E5%B8%A6%E8%80%B3%E6%9C%BA%E8%B7%B3%E5%B9%BF%E5%9C%BA%E8%88%9E%23&Refer=top',
+ 'keyword': '大妈带耳机跳广场舞',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '10',
+ 'hot': '583688',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E5%BF%83%E5%87%8C%20%E8%84%B8&Refer=top',
+ 'keyword': '王心凌 脸',
+ 'state': '热'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '11',
+ 'hot': '454213',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%B5%AA%E6%BC%AB%E5%88%B0%E9%AA%A8%E5%AD%90%E9%87%8C%E7%9A%84%E5%8F%A5%E5%AD%90%23&Refer=top',
+ 'keyword': '浪漫到骨子里的句子',
+ 'state': '热'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '12',
+ 'hot': '385460',
+ 'href': 'https://s.weibo.com/weibo?q=%E8%83%9C%E5%88%A9%E6%8E%A5%E5%8F%97%E8%B0%83%E6%9F%A5%E5%89%8D%E5%88%B0%E7%BE%8E%E5%AE%B9%E9%99%A2%E5%8C%96%E5%A6%86&Refer=top',
+ 'keyword': '胜利接受调查前到美容院化妆',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '13',
+ 'hot': '377073',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%AF%94%E4%BC%AF%E5%90%A6%E8%AE%A4%E7%BB%93%E5%A9%9A%E6%98%AF%E6%8A%A5%E5%A4%8D%E8%B5%9B%E7%90%B3%E5%A8%9C%23&Refer=top',
+ 'keyword': '比伯否认结婚是报复赛琳娜',
+ 'state': '热'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '14',
+ 'hot': '341059',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%A2%AB%E6%90%AD%E8%AE%AA%E6%97%B6%E7%AC%AC%E4%B8%80%E5%8F%8D%E5%BA%94%23&Refer=top',
+ 'keyword': '被搭讪时第一反应',
+ 'state': '热'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '15',
+ 'hot': '286596',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%20%E6%B2%B9%E8%8F%9C%E7%B1%BD%E8%BF%9B%E5%8F%A3%E7%A6%81%E4%BB%A4&Refer=top',
+ 'keyword': '中国加拿大 油菜籽进口禁令',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '16',
+ 'hot': '281033',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AB%8C%E8%A1%8C%E6%9D%8E%E5%A4%AA%E5%A4%9A%E6%89%94%E6%8E%8966800%E5%85%83%E7%8E%B0%E9%87%91%23&Refer=top',
+ 'keyword': '嫌行李太多扔掉66800元现金',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '17',
+ 'hot': '277708',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%B2%8D%E4%BA%91&Refer=top',
+ 'keyword': '鲍云',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '18',
+ 'hot': '269473',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E4%B9%90%E4%B9%90%20%E5%85%81%E6%81%A9&Refer=top',
+ 'keyword': '王乐乐 允恩',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '19',
+ 'hot': '254778',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%9D%A8%E6%B8%85%E6%9F%A0&Refer=top',
+ 'keyword': '杨清柠',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '20',
+ 'hot': '220635',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%82%85%E5%9B%AD%E6%85%A7100%E7%B1%B3%E4%BB%B0%E6%B3%B3%E5%86%A0%E5%86%9B%23&Refer=top',
+ 'keyword': '傅园慧100米仰泳冠军',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '21',
+ 'hot': '212264',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%B0%91%E5%B9%B4%E9%81%AD%E9%9C%B8%E5%87%8C%E8%87%B41%E6%AD%BB%E5%88%A48%E5%B9%B4%23&Refer=top',
+ 'keyword': '少年遭霸凌致1死判8年',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '22',
+ 'hot': '200483',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%BF%83%E7%96%BC%E5%A8%9C%E7%BE%8E%23&Refer=top',
+ 'keyword': '心疼娜美',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '23',
+ 'hot': '195962',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%BF%AA%E6%8B%9C%E7%9A%84%E5%AE%9D%E5%AE%9D%E5%93%AD%E4%BA%86%E6%80%8E%E4%B9%88%E5%93%84%23&Refer=top',
+ 'keyword': '迪拜的宝宝哭了怎么哄',
+ 'state': '热'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '24',
+ 'hot': '189163',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E6%98%93%E6%9C%A8&Refer=top',
+ 'keyword': '王易木',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '25',
+ 'hot': '185418',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%BD%91%E5%8F%8B%E5%AE%B6%E7%9A%84%E7%8C%AB%E7%94%9F%E7%97%85%E4%BA%86&Refer=top',
+ 'keyword': '网友家的猫生病了',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '26',
+ 'hot': '182973',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%BD%A0%E7%9A%84%E7%8E%8B%E4%B9%90%E4%B9%90&Refer=top',
+ 'keyword': '你的王乐乐',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '27',
+ 'hot': '158917',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%B8%8A%E5%A4%96%E7%94%B7%E7%94%9F%E5%AE%BF%E8%88%8D&Refer=top',
+ 'keyword': '上外男生宿舍',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '28',
+ 'hot': '157626',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AE%9D%E8%97%8F%E5%90%83%E6%92%AD%E8%8B%8F%E5%A4%A7%E5%BC%BA%23&Refer=top',
+ 'keyword': '宝藏吃播苏大强',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '29',
+ 'hot': '151083',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%83%E5%88%B0%E6%8A%98%E8%80%B3%E6%A0%B9%E7%9A%84%E6%84%9F%E8%A7%89%23&Refer=top',
+ 'keyword': '第一次吃到折耳根的感觉',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '30',
+ 'hot': '142951',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%9B%B9%E5%9B%AD%E5%8D%B3%E6%97%A5%E8%B5%B7%E8%87%AA%E8%A1%8C%E6%8B%86%E9%99%A4%23&Refer=top',
+ 'keyword': '曹园即日起自行拆除',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '31',
+ 'hot': '139772',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%91%A8%E5%87%AF%E7%BF%94%E7%8E%8B%E5%BE%B7%E6%89%8D%E5%88%A0%E5%8D%9A%23&Refer=top',
+ 'keyword': '周凯翔王德才删博',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '32',
+ 'hot': '131078',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E9%99%88%E6%9F%8F%E9%9C%96%E5%9B%9E%E5%BA%94%E4%B8%8E%E8%83%9C%E5%88%A9%E5%85%B3%E7%B3%BB%23&Refer=top',
+ 'keyword': '陈柏霖回应与胜利关系',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '33',
+ 'hot': '127821',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8C%83%E5%86%B0%E5%86%B0%E7%BE%8E%E5%AE%B9%E9%99%A2%E6%94%B6%E8%B4%B9%E6%A0%87%E5%87%86%23&Refer=top',
+ 'keyword': '范冰冰美容院收费标准',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '34',
+ 'hot': '124130',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%BC%A0%E6%82%AC%E8%80%81%E5%85%AC&Refer=top',
+ 'keyword': '张悬老公',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '35',
+ 'hot': '123790',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%88%B1%E8%B1%86%E4%B8%BA%E7%B2%89%E4%B8%9D%E6%93%8D%E7%A2%8E%E4%BA%86%E5%BF%83%23&Refer=top',
+ 'keyword': '爱豆为粉丝操碎了心',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '36',
+ 'hot': '120210',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%AD%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E9%80%80%E7%A7%9F%E5%90%8E%E7%9A%84%E5%85%AC%E5%AF%93%23&Refer=top',
+ 'keyword': '中国留学生退租后的公寓',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '37',
+ 'hot': '117783',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%90%91%E7%9C%9F%E8%A2%AB%E5%88%86%E6%89%8B%23&Refer=top',
+ 'keyword': '向真被分手',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '38',
+ 'hot': '110210',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%80%E4%B8%AA%E5%8C%BB%E5%AD%A6%E7%94%9F%E7%9A%84%E6%89%8B%E6%9C%BA%E7%9B%B8%E5%86%8C%23&Refer=top',
+ 'keyword': '一个医学生的手机相册',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '39',
+ 'hot': '109339',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%9B%BD%E6%B3%B0%E8%88%AA%E7%A9%BA%E6%94%B6%E8%B4%AD%E9%A6%99%E6%B8%AF%E5%BF%AB%E8%BF%90&Refer=top',
+ 'keyword': '国泰航空收购香港快运',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '40',
+ 'hot': '106031',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%9D%92%E6%98%A5%E6%9C%89%E4%BD%A0&Refer=top',
+ 'keyword': '青春有你',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '41',
+ 'hot': '105221',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8C%83%E5%86%B0%E5%86%B0%E5%BC%80%E7%BE%8E%E5%AE%B9%E9%99%A2%23&Refer=top',
+ 'keyword': '范冰冰开美容院',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '42',
+ 'hot': '104661',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%A5%B3%E6%9C%8B%E5%8F%8B%E7%83%A7%E7%9A%84%E8%8F%9C&Refer=top',
+ 'keyword': '女朋友烧的菜',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '43',
+ 'hot': '104616',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%B7%B1%E5%9C%B3%E5%9C%B0%E9%93%813%E5%8F%B7%E7%BA%BF%23&Refer=top',
+ 'keyword': '深圳地铁3号线',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '44',
+ 'hot': '90831',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%BD%A0%E6%8B%8D%E6%91%84%E8%BF%87%E7%9A%84%E5%A4%9C%E6%99%AF%23&Refer=top',
+ 'keyword': '你拍摄过的夜景',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '45',
+ 'hot': '83769',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%94%AF%E4%BB%98%E5%AE%9D%E8%BF%98%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%94%B6%E8%B4%B9&Refer=top',
+ 'keyword': '支付宝还信用卡收费',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '46',
+ 'hot': '82267',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%8B%8F%E5%A4%A7%E5%BC%BA%E4%B9%8B%E6%AD%8C%23&Refer=top',
+ 'keyword': '苏大强之歌',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '47',
+ 'hot': '81859',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%8F%B2%E8%92%82%E8%8A%AC%E6%A3%AE%E6%99%83%E5%80%92%E6%A0%BC%E6%9E%97&Refer=top',
+ 'keyword': '史蒂芬森晃倒格林',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '48',
+ 'hot': '81692',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%8D%8E%E4%B8%BAP30%E5%8F%91%E5%B8%83%E4%BC%9A%23&Refer=top',
+ 'keyword': '华为P30发布会',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '49',
+ 'hot': '74573',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%B5%B5%E8%81%AA%E5%8E%BB%E5%93%AA%E4%BA%86%23&Refer=top',
+ 'keyword': '赵聪去哪了',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '50',
+ 'hot': '66028',
+ 'href': 'https://s.weibo.com/weibo?q=KPI%E8%80%83%E6%A0%B8%E6%98%93%E5%BC%95%E5%8F%91%E5%91%98%E5%B7%A5%E5%BF%83%E7%90%86%E9%97%AE%E9%A2%98&Refer=top',
+ 'keyword': 'KPI考核易引发员工心理问题',
+ 'state': '新'}
+2019-03-27 11:46:34 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-27 11:46:34 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1485,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 14730,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/302': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 27, 3, 46, 34, 516180),
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 54,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 9,
+ 'memusage/max': 49786880,
+ 'memusage/startup': 49782784,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 3, 27, 3, 46, 33, 814135)}
+2019-03-27 11:46:34 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-03-27 14:37:54 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: WeiboHotSpider)
+2019-03-27 14:37:54 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 2.7.10 (default, Aug 17 2018, 19:45:58) - [GCC 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.0.42)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.2.0-x86_64-i386-64bit
+2019-03-27 14:37:54 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'WeiboHotSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['WeiboHotSpider.spiders'], 'LOG_FILE': 'log.txt', 'BOT_NAME': 'WeiboHotSpider'}
+2019-03-27 14:37:54 [scrapy.extensions.telnet] INFO: Telnet Password: 28cfdedaca19a13c
+2019-03-27 14:37:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2019-03-27 14:37:55 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-27 14:37:55 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-27 14:37:55 [scrapy.middleware] INFO: Enabled item pipelines:
+['WeiboHotSpider.pipelines.WeibohotspiderPipeline']
+2019-03-27 14:37:55 [scrapy.core.engine] INFO: Spider opened
+2019-03-27 14:37:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-27 14:37:55 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-03-27 14:37:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://weibo.com/sorry?pagenotfound&> from <GET https://s.weibo.com/robots.txt>
+2019-03-27 14:37:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fsorry%3Fpagenotfound%26&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1553668675.3402> from <GET https://weibo.com/sorry?pagenotfound&>
+2019-03-27 14:37:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fsorry%3Fpagenotfound%26&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1553668675.3402> (referer: None)
+2019-03-27 14:37:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://s.weibo.com/top/summary?cate=realtimehot> (referer: None)
+2019-03-27 14:37:55 [scrapy.core.scraper] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "/Users/a824810056/Library/Python/2.7/lib/python/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "WeiboHotSpider/pipelines.py", line 36, in process_item
+    data_row = [item["NO"], item["keyword"], item["state"], item["hot"], item["href"]]
+  File "/Users/a824810056/Library/Python/2.7/lib/python/site-packages/scrapy/item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'NO'
+2019-03-27 14:37:55 [scrapy.core.scraper] ERROR: Error processing {'href': 'https://s.weibo.com/weibo?q=%E4%B8%9C%E9%83%A8%E6%88%98%E5%8C%BA%E9%99%86%E5%86%9B%E5%AE%98%E5%BE%AE%E4%B8%8A%E7%BA%BF&Refer=new_time',
+ 'keyword': '\xe4\xb8\x9c\xe9\x83\xa8\xe6\x88\x98\xe5\x8c\xba\xe9\x99\x86\xe5\x86\x9b\xe5\xae\x98\xe5\xbe\xae\xe4\xb8\x8a\xe7\xba\xbf',
+ 'state': '\xe7\x83\xad'}
+Traceback (most recent call last):
+  File "/Users/a824810056/Library/Python/2.7/lib/python/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "WeiboHotSpider/pipelines.py", line 36, in process_item
+    data_row = [item["NO"], item["keyword"], item["state"], item["hot"], item["href"]]
+  File "/Users/a824810056/Library/Python/2.7/lib/python/site-packages/scrapy/item.py", line 59, in __getitem__
+    return self._values[key]
+KeyError: 'NO'
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '1',
+ 'hot': '1734892',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%90%91%E4%BD%90%E6%B1%82%E5%A9%9A%E9%83%AD%E7%A2%A7%E5%A9%B7%23&Refer=top',
+ 'keyword': '\xe5\x90\x91\xe4\xbd\x90\xe6\xb1\x82\xe5\xa9\x9a\xe9\x83\xad\xe7\xa2\xa7\xe5\xa9\xb7',
+ 'state': '\xe6\xb2\xb8'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '2',
+ 'hot': '1561051',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B9%A6%E5%8C%85%E8%97%8F142%E6%94%AF%E5%AD%95%E5%A6%87%E8%A1%80%E6%A0%B7%E5%87%BA%E5%A2%83%23&Refer=top',
+ 'keyword': '\xe4\xb9\xa6\xe5\x8c\x85\xe8\x97\x8f142\xe6\x94\xaf\xe5\xad\x95\xe5\xa6\x87\xe8\xa1\x80\xe6\xa0\xb7\xe5\x87\xba\xe5\xa2\x83',
+ 'state': '\xe7\x83\xad'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '3',
+ 'hot': '1223906',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%9B%BD%E5%8F%B0%E5%8A%9E%E5%9B%9E%E5%BA%94%E6%AC%A7%E9%98%B3%E5%A8%9C%E5%A8%9C%E4%BA%8B%E4%BB%B6%23&Refer=top',
+ 'keyword': '\xe5\x9b\xbd\xe5\x8f\xb0\xe5\x8a\x9e\xe5\x9b\x9e\xe5\xba\x94\xe6\xac\xa7\xe9\x98\xb3\xe5\xa8\x9c\xe5\xa8\x9c\xe4\xba\x8b\xe4\xbb\xb6',
+ 'state': '\xe7\x83\xad'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '4',
+ 'hot': '1115609',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%BC%A0%E8%BD%A9%E7%9D%BFSelina%E7%AC%91%E5%BE%97%E5%A5%BD%E5%BC%80%E5%BF%83%23&Refer=top',
+ 'keyword': '\xe5\xbc\xa0\xe8\xbd\xa9\xe7\x9d\xbfSelina\xe7\xac\x91\xe5\xbe\x97\xe5\xa5\xbd\xe5\xbc\x80\xe5\xbf\x83',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '5',
+ 'hot': '977390',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%BE%93%E6%B6%B2%E7%AE%A1%E5%86%85%E7%8E%B02%E5%8E%98%E7%B1%B3%E5%A4%B4%E5%8F%91%E4%B8%9D%23&Refer=top',
+ 'keyword': '\xe8\xbe\x93\xe6\xb6\xb2\xe7\xae\xa1\xe5\x86\x85\xe7\x8e\xb02\xe5\x8e\x98\xe7\xb1\xb3\xe5\xa4\xb4\xe5\x8f\x91\xe4\xb8\x9d',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '6',
+ 'hot': '774172',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%89%BE%E4%B8%AA%E8%83%96%E7%82%B9%E7%9A%84%E5%A5%B3%E6%9C%8B%E5%8F%8B%E4%B8%8D%E5%A5%BD%E5%90%97%23&Refer=top',
+ 'keyword': '\xe6\x89\xbe\xe4\xb8\xaa\xe8\x83\x96\xe7\x82\xb9\xe7\x9a\x84\xe5\xa5\xb3\xe6\x9c\x8b\xe5\x8f\x8b\xe4\xb8\x8d\xe5\xa5\xbd\xe5\x90\x97',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '7',
+ 'hot': '682545',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%AF%B7%E9%BB%84%E5%AD%90%E9%9F%AC%E5%AF%B9%E5%90%8C%E7%BB%84%E5%A5%B3%E6%BC%94%E5%91%98%E6%B8%A9%E6%9F%94%E4%B8%80%E7%82%B9%23&Refer=top',
+ 'keyword': '\xe8\xaf\xb7\xe9\xbb\x84\xe5\xad\x90\xe9\x9f\xac\xe5\xaf\xb9\xe5\x90\x8c\xe7\xbb\x84\xe5\xa5\xb3\xe6\xbc\x94\xe5\x91\x98\xe6\xb8\xa9\xe6\x9f\x94\xe4\xb8\x80\xe7\x82\xb9',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '8',
+ 'hot': '611169',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%B2%B3%E5%8C%97%E7%9C%81%E8%80%83%E9%80%80%E5%87%BA%E8%81%94%E8%80%83%23&Refer=top',
+ 'keyword': '\xe6\xb2\xb3\xe5\x8c\x97\xe7\x9c\x81\xe8\x80\x83\xe9\x80\x80\xe5\x87\xba\xe8\x81\x94\xe8\x80\x83',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '9',
+ 'hot': '579855',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%9C%A8%E5%8A%A0%E9%81%AD%E7%BB%91%E6%9E%B6%E7%95%99%E5%AD%A6%E7%94%9F%E8%A2%AB%E6%89%BE%E5%88%B0%E4%BA%86&Refer=top',
+ 'keyword': '\xe5\x9c\xa8\xe5\x8a\xa0\xe9\x81\xad\xe7\xbb\x91\xe6\x9e\xb6\xe7\x95\x99\xe5\xad\xa6\xe7\x94\x9f\xe8\xa2\xab\xe6\x89\xbe\xe5\x88\xb0\xe4\xba\x86',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '10',
+ 'hot': '567250',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%9C%A8%E5%B9%B2%E5%98%9B%E4%B8%89%E4%B8%AA%E5%AD%97%E6%9C%89%E5%A4%9A%E6%9A%A7%E6%98%A7%23&Refer=top',
+ 'keyword': '\xe5\x9c\xa8\xe5\xb9\xb2\xe5\x98\x9b\xe4\xb8\x89\xe4\xb8\xaa\xe5\xad\x97\xe6\x9c\x89\xe5\xa4\x9a\xe6\x9a\xa7\xe6\x98\xa7',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '11',
+ 'hot': '516753',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%8D%E5%8F%91%E6%9C%8B%E5%8F%8B%E5%9C%88%E7%9A%84%E5%8E%9F%E5%9B%A0%23&Refer=top',
+ 'keyword': '\xe4\xb8\x8d\xe5\x8f\x91\xe6\x9c\x8b\xe5\x8f\x8b\xe5\x9c\x88\xe7\x9a\x84\xe5\x8e\x9f\xe5\x9b\xa0',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '12',
+ 'hot': '502317',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B9%8C%E5%85%8B%E5%85%B0%E5%B0%91%E5%A5%B3%E5%8F%91%E8%89%B2%23&Refer=top',
+ 'keyword': '\xe4\xb9\x8c\xe5\x85\x8b\xe5\x85\xb0\xe5\xb0\x91\xe5\xa5\xb3\xe5\x8f\x91\xe8\x89\xb2',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '13',
+ 'hot': '486989',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%90%91%E5%A4%AA&Refer=top',
+ 'keyword': '\xe5\x90\x91\xe5\xa4\xaa',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '14',
+ 'hot': '313819',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%A5%B3%E6%9C%8B%E5%8F%8B%E7%83%A7%E7%9A%84%E8%8F%9C%23&Refer=top',
+ 'keyword': '\xe5\xa5\xb3\xe6\x9c\x8b\xe5\x8f\x8b\xe7\x83\xa7\xe7\x9a\x84\xe8\x8f\x9c',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '15',
+ 'hot': '306496',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%8E%8B%E5%BF%83%E5%87%8C%E5%85%AC%E5%8F%B8%E5%90%A6%E8%AE%A4%E6%95%B4%E5%AE%B9%23&Refer=top',
+ 'keyword': '\xe7\x8e\x8b\xe5\xbf\x83\xe5\x87\x8c\xe5\x85\xac\xe5\x8f\xb8\xe5\x90\xa6\xe8\xae\xa4\xe6\x95\xb4\xe5\xae\xb9',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '16',
+ 'hot': '302174',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%9D%A8%E5%B9%82%E5%8F%91%E9%99%85%E7%BA%BF%23&Refer=top',
+ 'keyword': '\xe6\x9d\xa8\xe5\xb9\x82\xe5\x8f\x91\xe9\x99\x85\xe7\xba\xbf',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '17',
+ 'hot': '296973',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%9B%BE%E8%BD%B6%E5%8F%AF%23&Refer=top',
+ 'keyword': '\xe6\x9b\xbe\xe8\xbd\xb6\xe5\x8f\xaf',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '18',
+ 'hot': '295289',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E7%8E%8B%E6%98%B1%E7%8F%A9%23&Refer=top',
+ 'keyword': '\xe7\x8e\x8b\xe6\x98\xb1\xe7\x8f\xa9',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '19',
+ 'hot': '285409',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%89%E6%98%9F%E5%9B%9E%E6%80%BC%E5%8D%8E%E4%B8%BA%23&Refer=top',
+ 'keyword': '\xe4\xb8\x89\xe6\x98\x9f\xe5\x9b\x9e\xe6\x80\xbc\xe5\x8d\x8e\xe4\xb8\xba',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '20',
+ 'hot': '285322',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AB%8C%E8%A1%8C%E6%9D%8E%E5%A4%AA%E5%A4%9A%E6%89%94%E6%8E%8966800%E5%85%83%E7%8E%B0%E9%87%91%23&Refer=top',
+ 'keyword': '\xe5\xab\x8c\xe8\xa1\x8c\xe6\x9d\x8e\xe5\xa4\xaa\xe5\xa4\x9a\xe6\x89\x94\xe6\x8e\x8966800\xe5\x85\x83\xe7\x8e\xb0\xe9\x87\x91',
+ 'state': '\xe7\x83\xad'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '21',
+ 'hot': '277902',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%83%AD%E7%A2%A7%E5%A9%B7%E7%88%B8%E7%88%B8&Refer=top',
+ 'keyword': '\xe9\x83\xad\xe7\xa2\xa7\xe5\xa9\xb7\xe7\x88\xb8\xe7\x88\xb8',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '22',
+ 'hot': '277260',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%98%93%E7%83%8A%E5%8D%83%E7%8E%BA%E9%94%85%E7%9B%96%E5%A4%B4%23&Refer=top',
+ 'keyword': '\xe6\x98\x93\xe7\x83\x8a\xe5\x8d\x83\xe7\x8e\xba\xe9\x94\x85\xe7\x9b\x96\xe5\xa4\xb4',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '23',
+ 'hot': '276983',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%94%B5%E7%AB%9E%E5%9C%88%E5%AD%A6%E5%8E%86%E7%A0%94%E7%A9%B6&Refer=top',
+ 'keyword': '\xe7\x94\xb5\xe7\xab\x9e\xe5\x9c\x88\xe5\xad\xa6\xe5\x8e\x86\xe7\xa0\x94\xe7\xa9\xb6',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '24',
+ 'hot': '259130',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%83%9C%E5%88%A9%E6%8E%A5%E5%8F%97%E8%B0%83%E6%9F%A5%E5%89%8D%E5%88%B0%E7%BE%8E%E5%AE%B9%E9%99%A2%E5%8C%96%E5%A6%86%23&Refer=top',
+ 'keyword': '\xe8\x83\x9c\xe5\x88\xa9\xe6\x8e\xa5\xe5\x8f\x97\xe8\xb0\x83\xe6\x9f\xa5\xe5\x89\x8d\xe5\x88\xb0\xe7\xbe\x8e\xe5\xae\xb9\xe9\x99\xa2\xe5\x8c\x96\xe5\xa6\x86',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '25',
+ 'hot': '233814',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%B0%91%E5%B9%B4%E9%81%AD%E9%9C%B8%E5%87%8C%E8%87%B41%E6%AD%BB%E5%88%A48%E5%B9%B4%23&Refer=top',
+ 'keyword': '\xe5\xb0\x91\xe5\xb9\xb4\xe9\x81\xad\xe9\x9c\xb8\xe5\x87\x8c\xe8\x87\xb41\xe6\xad\xbb\xe5\x88\xa48\xe5\xb9\xb4',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '26',
+ 'hot': '229054',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%A5%BD%E7%9C%8B%E7%9A%84%E5%8D%A7%E8%9A%95%E5%A4%A7%E8%B5%9B%23&Refer=top',
+ 'keyword': '\xe5\xa5\xbd\xe7\x9c\x8b\xe7\x9a\x84\xe5\x8d\xa7\xe8\x9a\x95\xe5\xa4\xa7\xe8\xb5\x9b',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '27',
+ 'hot': '220883',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%88%9D%E6%81%8B%E7%9C%9F%E7%9A%84%E6%94%BE%E4%B8%8D%E4%B8%8B%E5%90%97%23&Refer=top',
+ 'keyword': '\xe5\x88\x9d\xe6\x81\x8b\xe7\x9c\x9f\xe7\x9a\x84\xe6\x94\xbe\xe4\xb8\x8d\xe4\xb8\x8b\xe5\x90\x97',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '28',
+ 'hot': '216874',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E9%83%AD%E7%A2%A7%E5%A9%B7%E9%92%BB%E6%88%92%23&Refer=top',
+ 'keyword': '\xe9\x83\xad\xe7\xa2\xa7\xe5\xa9\xb7\xe9\x92\xbb\xe6\x88\x92',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '29',
+ 'hot': '188022',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%9D%A8%E6%B8%85%E6%9F%A0&Refer=top',
+ 'keyword': '\xe6\x9d\xa8\xe6\xb8\x85\xe6\x9f\xa0',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '30',
+ 'hot': '178011',
+ 'href': 'https://s.weibo.com/weibo?q=NASA%E5%9C%A8%E7%81%AB%E6%98%9F%E6%8B%8D%E5%88%B0%E8%B2%8C%E4%BC%BC%E8%98%91%E8%8F%87%E7%85%A7%E7%89%87&Refer=top',
+ 'keyword': 'NASA\xe5\x9c\xa8\xe7\x81\xab\xe6\x98\x9f\xe6\x8b\x8d\xe5\x88\xb0\xe8\xb2\x8c\xe4\xbc\xbc\xe8\x98\x91\xe8\x8f\x87\xe7\x85\xa7\xe7\x89\x87',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '31',
+ 'hot': '170851',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%A5%B3%E5%84%BF%E4%BB%AC%E7%9A%84%E6%81%8B%E7%88%B1&Refer=top',
+ 'keyword': '\xe5\xa5\xb3\xe5\x84\xbf\xe4\xbb\xac\xe7\x9a\x84\xe6\x81\x8b\xe7\x88\xb1',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '32',
+ 'hot': '170263',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%AE%A9%E5%89%8D%E4%BB%BB%E5%90%8E%E6%82%94%E6%98%AF%E7%A7%8D%E6%80%8E%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C%23&Refer=top',
+ 'keyword': '\xe8\xae\xa9\xe5\x89\x8d\xe4\xbb\xbb\xe5\x90\x8e\xe6\x82\x94\xe6\x98\xaf\xe7\xa7\x8d\xe6\x80\x8e\xe6\xa0\xb7\xe7\x9a\x84\xe4\xbd\x93\xe9\xaa\x8c',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '33',
+ 'hot': '151437',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%8A%E7%8F%AD%E5%90%8E%E6%89%8D%E7%9F%A5%E9%81%93%E5%AD%A6%E6%A0%A1%E6%9C%89%E5%A4%9A%E5%A5%BD%23&Refer=top',
+ 'keyword': '\xe4\xb8\x8a\xe7\x8f\xad\xe5\x90\x8e\xe6\x89\x8d\xe7\x9f\xa5\xe9\x81\x93\xe5\xad\xa6\xe6\xa0\xa1\xe6\x9c\x89\xe5\xa4\x9a\xe5\xa5\xbd',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '34',
+ 'hot': '146533',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%BC%A0%E6%82%AC%E6%80%80%E5%AD%95%23&Refer=top',
+ 'keyword': '\xe5\xbc\xa0\xe6\x82\xac\xe6\x80\x80\xe5\xad\x95',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '35',
+ 'hot': '126173',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%96%9C%E6%AC%A2%E7%9A%84%E4%BA%BA%E5%92%8C%E8%AE%A8%E5%8E%8C%E4%BA%BA%E6%98%AF%E5%A5%BD%E6%9C%8B%E5%8F%8B&Refer=top',
+ 'keyword': '\xe5\x96\x9c\xe6\xac\xa2\xe7\x9a\x84\xe4\xba\xba\xe5\x92\x8c\xe8\xae\xa8\xe5\x8e\x8c\xe4\xba\xba\xe6\x98\xaf\xe5\xa5\xbd\xe6\x9c\x8b\xe5\x8f\x8b',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '36',
+ 'hot': '122800',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%A4%A7%E5%A4%9A%E6%95%B0%E5%81%9APPT%E7%9A%84%E4%BA%BA&Refer=top',
+ 'keyword': '\xe5\xa4\xa7\xe5\xa4\x9a\xe6\x95\xb0\xe5\x81\x9aPPT\xe7\x9a\x84\xe4\xba\xba',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '37',
+ 'hot': '121567',
+ 'href': 'https://s.weibo.com/weibo?q=%E6%B9%96%E5%8D%97%E5%9B%9A%E7%A6%81%E5%B0%91%E5%A5%B3%E5%9C%B0%E6%B4%9E&Refer=top',
+ 'keyword': '\xe6\xb9\x96\xe5\x8d\x97\xe5\x9b\x9a\xe7\xa6\x81\xe5\xb0\x91\xe5\xa5\xb3\xe5\x9c\xb0\xe6\xb4\x9e',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '38',
+ 'hot': '121228',
+ 'href': 'https://s.weibo.com/weibo?q=ella&Refer=top',
+ 'keyword': 'ella',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '39',
+ 'hot': '121070',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E5%AB%82%E5%AD%90101%23&Refer=top',
+ 'keyword': '\xe5\xab\x82\xe5\xad\x90101',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '40',
+ 'hot': '109758',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E4%B8%80%E6%9E%B6%E6%B3%A2%E9%9F%B3737max%E7%B4%A7%E6%80%A5%E8%BF%AB%E9%99%8D%23&Refer=top',
+ 'keyword': '\xe4\xb8\x80\xe6\x9e\xb6\xe6\xb3\xa2\xe9\x9f\xb3737max\xe7\xb4\xa7\xe6\x80\xa5\xe8\xbf\xab\xe9\x99\x8d',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '41',
+ 'hot': '109694',
+ 'href': 'https://s.weibo.com/weibo?q=%E8%BF%9B%E5%8F%A3%E5%A2%9E%E5%80%BC%E7%A8%8E%E7%A8%8E%E7%8E%87%E8%BF%9B%E4%B8%80%E6%AD%A5%E4%B8%8B%E8%B0%83&Refer=top',
+ 'keyword': '\xe8\xbf\x9b\xe5\x8f\xa3\xe5\xa2\x9e\xe5\x80\xbc\xe7\xa8\x8e\xe7\xa8\x8e\xe7\x8e\x87\xe8\xbf\x9b\xe4\xb8\x80\xe6\xad\xa5\xe4\xb8\x8b\xe8\xb0\x83',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '42',
+ 'hot': '108468',
+ 'href': 'https://s.weibo.com/weibo?q=%E5%BC%A0%E4%B8%B0%E8%B1%AA&Refer=top',
+ 'keyword': '\xe5\xbc\xa0\xe4\xb8\xb0\xe8\xb1\xaa',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '43',
+ 'hot': '107143',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%AA%91%E8%BD%A6%E5%8F%82%E5%8A%A0%E9%A9%AC%E6%8B%89%E6%9D%BE%E7%BB%88%E8%BA%AB%E7%A6%81%E8%B5%9B&Refer=top',
+ 'keyword': '\xe9\xaa\x91\xe8\xbd\xa6\xe5\x8f\x82\xe5\x8a\xa0\xe9\xa9\xac\xe6\x8b\x89\xe6\x9d\xbe\xe7\xbb\x88\xe8\xba\xab\xe7\xa6\x81\xe8\xb5\x9b',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '44',
+ 'hot': '106999',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%BB%BB%E6%97%B6%E5%AE%8C%E9%80%80%E4%BC%8D&Refer=top',
+ 'keyword': '\xe4\xbb\xbb\xe6\x97\xb6\xe5\xae\x8c\xe9\x80\x80\xe4\xbc\x8d',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '45',
+ 'hot': '106129',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%AF%94%E4%BC%AF%E5%90%A6%E8%AE%A4%E7%BB%93%E5%A9%9A%E6%98%AF%E6%8A%A5%E5%A4%8D%E8%B5%9B%E7%90%B3%E5%A8%9C%23&Refer=top',
+ 'keyword': '\xe6\xaf\x94\xe4\xbc\xaf\xe5\x90\xa6\xe8\xae\xa4\xe7\xbb\x93\xe5\xa9\x9a\xe6\x98\xaf\xe6\x8a\xa5\xe5\xa4\x8d\xe8\xb5\x9b\xe7\x90\xb3\xe5\xa8\x9c',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '46',
+ 'hot': '103850',
+ 'href': 'https://s.weibo.com/weibo?q=%E4%BD%A0%E7%9A%84%E7%8E%8B%E4%B9%90%E4%B9%90&Refer=top',
+ 'keyword': '\xe4\xbd\xa0\xe7\x9a\x84\xe7\x8e\x8b\xe4\xb9\x90\xe4\xb9\x90',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '47',
+ 'hot': '102582',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E6%B5%AA%E6%BC%AB%E5%88%B0%E9%AA%A8%E5%AD%90%E9%87%8C%E7%9A%84%E5%8F%A5%E5%AD%90%23&Refer=top',
+ 'keyword': '\xe6\xb5\xaa\xe6\xbc\xab\xe5\x88\xb0\xe9\xaa\xa8\xe5\xad\x90\xe9\x87\x8c\xe7\x9a\x84\xe5\x8f\xa5\xe5\xad\x90',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '48',
+ 'hot': '96859',
+ 'href': 'https://s.weibo.com/weibo?q=%23%E8%A2%AB%E6%90%AD%E8%AE%AA%E6%97%B6%E7%AC%AC%E4%B8%80%E5%8F%8D%E5%BA%94%23&Refer=top',
+ 'keyword': '\xe8\xa2\xab\xe6\x90\xad\xe8\xae\xaa\xe6\x97\xb6\xe7\xac\xac\xe4\xb8\x80\xe5\x8f\x8d\xe5\xba\x94',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '49',
+ 'hot': '92715',
+ 'href': 'https://s.weibo.com/weibo?q=%E7%8E%8B%E6%98%93%E6%9C%A8&Refer=top',
+ 'keyword': '\xe7\x8e\x8b\xe6\x98\x93\xe6\x9c\xa8',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://s.weibo.com/top/summary?cate=realtimehot>
+{'NO': '50',
+ 'hot': '89976',
+ 'href': 'https://s.weibo.com/weibo?q=%E9%B2%8D%E4%BA%91&Refer=top',
+ 'keyword': '\xe9\xb2\x8d\xe4\xba\x91',
+ 'state': '\xe6\x96\xb0'}
+2019-03-27 14:37:55 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-27 14:37:55 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1485,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 10528,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/302': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 27, 6, 37, 55, 774874),
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 54,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 9,
+ 'memusage/max': 47435776,
+ 'memusage/startup': 47435776,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 3, 27, 6, 37, 55, 86391)}
+2019-03-27 14:37:55 [scrapy.core.engine] INFO: Spider closed (finished)
